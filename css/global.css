@@ -1,29 +1,43 @@
 
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100&family=Quicksand:wght@300&display=swap');
+
+* {
+margin: 0;
+padding: 0;
+}
 body {
     overflow: auto;
-    background-color: #0F0F0F;
+    margin: 0;
+    padding: 0;
 }
 
-content {
+#content {
     display: grid;
-    grid-template-rows: 10vh 70vh 20vh;
-    grid-template-columns: 100vh;
+    grid-template-columns: 100vw;
+    grid-template-rows: 15vh 65vh 20vh;
     grid-template-areas: "nav"
                          "mid"
                          "footer";
-    background-color: #8B8982;
+    background-color: #0F0F0F;
+    font-family: 'Quicksand', sans-serif;
+    margin: 0;
+    padding: 0;
 }
 
 #nav {
-    grid-area: "nav";
+    grid-area: nav;
+    position: sticky;
+    
 }
 
 #mid {
-    grid-area: "mid";
+    grid-area: mid;
     overflow-x: hidden;
     overflow-y: auto;
+    align-content: center;
+    margin:auto;
 }
 
 #footer {
-    grid-area: "footer";
+    grid-area: footer;
 }
