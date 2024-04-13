@@ -1,0 +1,30 @@
+
+body {
+    overflow: auto;
+}
+
+content {
+    display: grid;
+    grid-template-areas: "nav"
+                         "header"
+                         "mid"
+                         "footer";
+}
+
+#nav {
+    grid-area: "nav";
+}
+
+#header {
+    grid-area: "header";
+}
+
+#mid {
+    grid-area: "mid";
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+#footer {
+    grid-area: "footer";
+}
