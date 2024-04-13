@@ -1,22 +1,21 @@
 
 body {
     overflow: auto;
+    background-color: #0F0F0F;
 }
 
 content {
     display: grid;
+    grid-template-rows: 10vh 70vh 20vh;
+    grid-template-columns: 100vh;
     grid-template-areas: "nav"
-                         "header"
                          "mid"
                          "footer";
+    background-color: #8B8982;
 }
 
 #nav {
     grid-area: "nav";
-}
-
-#header {
-    grid-area: "header";
 }
 
 #mid {
